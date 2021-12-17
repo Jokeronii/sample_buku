@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_book"
+        android:layout_width="161dp"
+        android:layout_height="263dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img" />
+
+    <TextView
+        android:id="@+id/txtJudul"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="12dp"
+        android:text="Pemrograman Aplikasi Android dengan Android Studio, Photoshop, dan Audition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toEndOf="@id/img_book"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPenulis"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:text="Penulis	:	Herlinah, S.Kom, M.Si. &amp; Musliadi KH, S.Kom."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toEndOf="@+id/img_book"
+        app:layout_constraintTop_toBottomOf="@+id/txtJudul" />
+
+    <TextView
+        android:id="@+id/txtPenerbit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:text="Penerbit	:	Elex Media Komputindo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toEndOf="@+id/img_book"
+        app:layout_constraintTop_toBottomOf="@+id/txtPenulis" />
+
+    <Button
+        android:id="@+id/btn_sample"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="sampelDisplay"
+        android:text="Lihat sampel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_book" />
+
+    <Button
+        android:id="@+id/btn_beli"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="beliBuku"
+        android:text="Beli Buku"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sample" />
+
+    <TextView
+        android:id="@+id/txt_desc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:scrollbars="vertical"
+        android:text="Anda ingin membuat aplikasi Android? Bingung ingin memulai dari mana? Apa yang harus dipersiapkan? Apa yang pertama kali harus dikerjakan? Bagaimana proses kerjanya? Setelah selesai dikerjakan mau diapakan? Untuk menjawab semua pertanyaan tersebut maka buku ini hadir di tengah-tengah pembaca dengan penyajian pembahasan materi menggunakan konsep persiapan, desain, pemrograman dan publikasi. Dengan konsep tersebut, siapa pun dapat mengembangkan aplikasi Android dengan mudah.  Pembahasan pada buku ini menggunakan Android Studio yang merupakan peranti pengembang aplikasi Android yang disediakan oleh Android Developers. Peranti ini menyediakan Android SDK (Software Development Kit) yang memudahkan pembuatan atau pengembangan aplikasi Android. Android SDK merupakan kumpulan software yang berisi alat pencari kesalahan progam (debugger), peniru perangkat bergerak (emulator), dokumentasi, contoh kode progam, serta panduan yang dapat dipelajari dengan mudah oleh siapa pun. Adanya peranti pengembang aplikasi Android yang memiliki fitur lengkap serta bebas digunakan, akan memudahkan pengembangan aplikasi Android.  Buku ini sangat cocok digunakan sebagai pemandu pengembangan aplikasi Android secara mandiri untuk semua kalangan sebab materi yang disajikan dibahas mulai dari nol sampai tuntas."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_beli" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
